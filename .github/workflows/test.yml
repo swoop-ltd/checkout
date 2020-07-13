@@ -76,7 +76,7 @@ jobs:
       - name: Checkout LFS
         uses: ./
         with:
-          repository: actions/checkout # hardcoded, otherwise doesn't work from a fork
+          repository: swoop-ltd/checkout # hardcoded, otherwise doesn't work from a fork
           ref: test-data/v2/lfs
           path: lfs
           lfs: true
@@ -150,7 +150,7 @@ jobs:
     steps:
       # Clone this repo
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: swoop-ltd/checkout@v2
 
       # Basic checkout using git
       - name: Checkout basic
@@ -182,7 +182,7 @@ jobs:
     steps:
       # Clone this repo
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: swoop-ltd/checkout@v2
 
       # Basic checkout using git
       - name: Checkout basic
